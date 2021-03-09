@@ -1,0 +1,75 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-08T07:20:39.913Z",
+        "line": 22,
+        "name": "Positive scenario to test login functionality",
+        "description": "",
+        "id": "login-into-simplilearn-website;positive-scenario-to-test-login-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2044961921,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has opened amazon website on Chrome Browser",
+            "match": {
+              "location": "Login_StepDef.user_has_opened_amazon_website_on_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3003137413,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enters correct \"def@xyz.com\" and \"abc1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "def@xyz.com",
+                  "offset": 21
+                },
+                {
+                  "val": "abc1234",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_StepDef.user_enters_correct_something_and_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 429013,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should be able to login successfully",
+            "match": {
+              "location": "Login_StepDef.user_should_be_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login into simplilearn website",
+    "description": "",
+    "id": "login-into-simplilearn-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/LoginWithPram.feature",
+    "tags": []
+  }
+]
